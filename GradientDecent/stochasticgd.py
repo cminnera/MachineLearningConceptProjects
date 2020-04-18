@@ -64,7 +64,7 @@ class AdalineSGD(object):
     def predict(self, X):
         return np.where(self.activation(self.net_input(X)) >= 0.0, 1, -1)
     
-    
+# change variables here
 ada = AdalineSGD(n_iter=15, eta=0.01, random_state=1)
 ada.fit(X_std, y)
 
